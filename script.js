@@ -5,8 +5,11 @@ let fin_grade=[];
 let total_creadit=0;
 let cerdit_arr=[]
 
-
-            
+document.getElementById('dep').addEventListener('click', depselect);
+document.getElementById('reg').addEventListener('click', regselect);
+document.getElementById('sem').addEventListener('click', semselect);
+document.getElementById('submit').addEventListener('click', checkselect);
+document.getElementById('calbtn').addEventListener('click',calculate);
 
 
 let dep = ["ECE","EEE","CSE","IT","MECH","CIVIL"]
