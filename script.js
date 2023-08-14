@@ -8,7 +8,9 @@ let cerdit_arr=[]
 document.getElementById('dep').addEventListener('click', depselect);
 document.getElementById('reg').addEventListener('click', regselect);
 document.getElementById('sem').addEventListener('click', semselect);
-document.getElementById('submit').addEventListener('click', checkselect);
+document.getElementById('submit').addEventListener('click', function() {
+    checkselect();
+});
 document.getElementById('calbtn').addEventListener('click',calculate);
 
 
