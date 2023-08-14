@@ -4,23 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cgpa</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
-        <h2 id="head">University Cgpa Calculator</h2>
+        <h2 id="head">University Gpa Calculator</h2>
         <div class="branch">
             <div class="dep">
                 <label for="dep">Department
-                    <select name="department" id="dep">
+                    <select name="department" id="dep" >
                       <option id="opt">Select</option>
                     </select>
                 </label>
             </div>
             <div class="reg">
                 <label for="reg">Regulation</label>
-                <select name="regulation" id="reg">
+                <select name="regulation" id="reg"">
                     <option value="select" id="opt">Select</option>
                 </select>
             </label>
@@ -33,7 +32,7 @@
             </label>
             </div>
             
-            <button type="submit"  id="submit">Sumbit</button>
+            <button type="submit" id="submit">Sumbit</button>
         </div>
         <div id="subjects" style="display: none;">
             <h2>Subject Grades</h2>
@@ -59,13 +58,15 @@
             </div>
            
 
-            <button type="sumbit" id="calbtn">Calculate</button>
-            
-
-        
+            <button type="sumbit" id="calbtn" >Calculate</button>
             
         </div>
+        <footer>
+            <p style="font-size: 10px;">copyrights&copy;hasan_2023</p>
+        </footer>
+
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
