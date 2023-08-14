@@ -212,7 +212,7 @@ function checkselect()
     if(dept!=null && regulation!=null && semes!=null)
     {
         
-    if(dept == 'ECE' && regulation == 2017 && semes == 1)
+    if(dept === 'ECE' && regulation === 2017 && semes === 1)
     {
              
             // ECE Subjects reg 2017   (sem 1 to sem 8)
