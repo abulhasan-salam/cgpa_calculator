@@ -13,27 +13,27 @@
         <div class="branch">
             <div class="dep">
                 <label for="dep">Department
-                    <select name="department" id="dep" onclick="depselect()">
+                    <select name="department" id="dep">
                       <option id="opt">Select</option>
                     </select>
                 </label>
             </div>
             <div class="reg">
                 <label for="reg">Regulation</label>
-                <select name="regulation" id="reg" onclick="regselect()">
+                <select name="regulation" id="reg">
                     <option value="select" id="opt">Select</option>
                 </select>
             </label>
             </div>
             <div class="sem">
                 <label for="sem">Semester</label>
-                <select name="semester" id="sem" onclick="semselect()">
+                <select name="semester" id="sem" >
                     <option value="select" id="opt">Select</option>
                 </select>
             </label>
             </div>
             
-            <button type="submit" onclick="checkselect()" id="submit">Sumbit</button>
+            <button type="submit"  id="submit">Sumbit</button>
         </div>
         <div id="subjects" style="display: none;">
             <h2>Subject Grades</h2>
@@ -59,7 +59,7 @@
             </div>
            
 
-            <button type="sumbit" id="calbtn" onclick="calculate()">Calculate</button>
+            <button type="sumbit" id="calbtn">Calculate</button>
             
 
         
