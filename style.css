@@ -15,7 +15,7 @@ body
 }
 .branch
 {
-    width: 93%;
+    width: 89%;
     display:flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.455);
@@ -85,6 +85,7 @@ th {
    width: 90%;
    display: flexbox;
 }
+
 /* Default styles for all devices */
 
 /* Your existing styles */
@@ -102,7 +103,8 @@ th {
         width: 98%;
     }
     #table_content {
-        font-size: 12px;
+        text-align: start;
+        font-size: 11px;
     }
     .branch .dep 
     {
