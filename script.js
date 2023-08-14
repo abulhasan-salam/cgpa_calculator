@@ -5,13 +5,13 @@ let fin_grade=[];
 let total_creadit=0;
 let cerdit_arr=[]
 
-document.getElementById('dep').addEventListener('click', depselect);
-document.getElementById('reg').addEventListener('click', regselect);
-document.getElementById('sem').addEventListener('click', semselect);
-document.getElementById('submit').addEventListener('click', function() {
-    checkselect();
-});
-document.getElementById('calbtn').addEventListener('click',calculate);
+document.getElementById('dep').addEventListener('change', depselect);
+document.getElementById('reg').addEventListener('change', regselect);
+document.getElementById('sem').addEventListener('change', semselect);
+document.getElementById('submit').addEventListener('click', checkselect);
+document.getElementById('calbtn').addEventListener('click',calculate)
+
+            
 
 
 let dep = ["ECE","EEE","CSE","IT","MECH","CIVIL"]
@@ -205,14 +205,26 @@ function calculate()
 function checkselect()
 {
 
+    console.log("Sumbit executed")
+
     let fin = document.getElementById('result')
     fin.style.display='none'
     
     console.log(dept)
+    console.log()
     if(dept!=null && regulation!=null && semes!=null)
     {
-        
-    if(dept === 'ECE' && regulation === 2017 && semes === 1)
+        let visible = document.getElementById('subjects')
+        visible.style.display='block'
+    }
+    else
+    {
+        alert("please select the valid info")
+    }
+     
+    
+
+    if(dept == 'ECE' && regulation == 2017 && semes == 1)
     {
              
             // ECE Subjects reg 2017   (sem 1 to sem 8)
@@ -222,7 +234,6 @@ function checkselect()
             {sub:"probelm Solving and python programming Laboratory",code:"GE8161",credit:2},{sub:"Pysics and chemistry laboratory",code:"BS8161",credit:2}];
 
             console.log("sem 1 ECE department regulation 2017")
-            console.log(ECE_re17_sem1_sub)
 
             _addtable(ECE_re17_sem1_sub)
 
@@ -336,16 +347,7 @@ function checkselect()
     
         _addtable(subjectsArray);
     }
-
-        let visible = document.getElementById('subjects')
-        visible.style.display='block'
-    }
-    else
-    {
-        alert("please select the valid info")
-    }
-     
-        
+    
 }
 
 
