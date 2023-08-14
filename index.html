@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cgpa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2 id="head">University Cgpa Calculator</h2>
+        <div class="branch">
+            <div class="dep">
+                <label for="dep">Department
+                    <select name="department" id="dep" onclick="depselect()">
+                      <option id="opt">Select</option>
+                    </select>
+                </label>
+            </div>
+            <div class="reg">
+                <label for="reg">Regulation</label>
+                <select name="regulation" id="reg" onclick="regselect()">
+                    <option value="select" id="opt">Select</option>
+                </select>
+            </label>
+            </div>
+            <div class="sem">
+                <label for="sem">Semester</label>
+                <select name="semester" id="sem" onclick="semselect()">
+                    <option value="select" id="opt">Select</option>
+                </select>
+            </label>
+            </div>
+            
+            <button type="submit" onclick="checkselect()" id="submit">Sumbit</button>
+        </div>
+        <div id="subjects" style="display: none;">
+            <h2>Subject Grades</h2>
+            <table id="table_content">
+                <tr>
+                    <th>S.No</th>
+                    <th>Subject code</th>
+                    <th>Subject name</th>
+                    <th>Credit Point</th>
+                    <th>Your Grade</th>
+                </tr>
+                <tbody id="tbody">
+                    
+
+                </tbody>
+                
+            </table>
+            <div class="respart">
+                <div id="result">
+
+                </div>
+
+            </div>
+           
+
+            <button type="sumbit" id="calbtn" onclick="calculate()">Calculate</button>
+            
+
+        
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
