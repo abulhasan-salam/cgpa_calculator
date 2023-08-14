@@ -1,0 +1,184 @@
+
+body
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(14, 65, 65, 0.975);
+}
+.wrapper
+{
+   
+    border-radius: 10px;
+    width: 95%;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.branch
+{
+    width: 93%;
+    display:flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.455);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    /* border: red solid 1px; */
+}
+.branch #dep
+{
+    border:white solid 1px;
+    font-size:small;
+    margin-right: 30px;
+}
+.branch #reg
+{
+    margin-right: 30px;
+}
+.branch #sem
+{
+    margin-right: 30px;
+}
+table {
+    border-radius: 5px;
+    border: black solid 1px;
+    background-color: azure;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    
+    border: solid rgba(0, 0, 0, 0.247) 0.5px;
+    padding: 10px;
+    text-align: justify;
+}
+
+th {
+    text-align: center;
+    background-color: #00000054;
+}
+#calbtn
+{
+   margin-bottom: 10px;
+   width:80px;
+   height: 40px;
+   background-color: rgba(255, 0, 0, 0.676);
+   color: rgb(240, 248, 255);
+   border-radius: 5px;
+   
+}
+.respart
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#subjects
+{
+    display: flex;
+    justify-content: center;
+}
+#table_content
+{
+   width: 90%;
+   display: flexbox;
+}
+/* Default styles for all devices */
+
+/* Your existing styles */
+
+/* Media queries for responsiveness */
+
+/* Small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for small screens here */
+    #head
+    {
+        font-size: medium;
+    }
+    .wrapper {
+        width: 98%;
+    }
+    #table_content {
+        font-size: 12px;
+    }
+    .branch .dep 
+    {
+        text-align: center;
+        font-size: small;
+        /* border: red solid 1px; */
+    }
+    .branch .reg 
+    {
+        text-align: center;
+        font-size: small;
+        /* border: red solid 1px; */
+    }
+    .branch .sem 
+    {
+        text-align: center;
+        font-size: small;
+        /* border: red solid 1px; */
+    }
+    .branch #dep
+    {
+        border:white solid 2px;
+        position: relative;
+        top: 5px;
+        left: 15px;
+
+    }
+    .branch #reg
+    {
+        border:white solid 1px;
+        position: relative;
+        top: 5px;
+        left: 15px;
+
+    }
+    .branch #sem
+    {
+        border:white solid 1px;
+        position: relative;
+        top: 5px;
+        left: 15px;
+
+    }
+    #submit
+    {
+        font-size: 10px;
+        color: aliceblue;
+        background-color: rgba(222, 36, 36, 0.668);
+        border-radius: 5px;
+        position: relative;
+        left: -6px;
+        /* border: red solid 1px; */
+    }
+    .subjects
+    {
+        display: block;
+    }
+
+}
+
+/* Medium screens (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjust styles for medium screens here */
+    .wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* Large screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+    /* Adjust styles for large screens here */
+    .wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
