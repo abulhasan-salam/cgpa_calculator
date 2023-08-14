@@ -211,16 +211,7 @@ function checkselect()
     console.log(dept)
     if(dept!=null && regulation!=null && semes!=null)
     {
-        let visible = document.getElementById('subjects')
-        visible.style.display='block'
-    }
-    else
-    {
-        alert("please select the valid info")
-    }
-     
-    
-
+        
     if(dept == 'ECE' && regulation == 2017 && semes == 1)
     {
              
@@ -231,6 +222,7 @@ function checkselect()
             {sub:"probelm Solving and python programming Laboratory",code:"GE8161",credit:2},{sub:"Pysics and chemistry laboratory",code:"BS8161",credit:2}];
 
             console.log("sem 1 ECE department regulation 2017")
+            console.log(ECE_re17_sem1_sub)
 
             _addtable(ECE_re17_sem1_sub)
 
@@ -344,7 +336,16 @@ function checkselect()
     
         _addtable(subjectsArray);
     }
-    
+
+        let visible = document.getElementById('subjects')
+        visible.style.display='block'
+    }
+    else
+    {
+        alert("please select the valid info")
+    }
+     
+        
 }
 
 
