@@ -50,9 +50,8 @@ Contributions are always welcome! If you find any issues or have suggestions for
 ## Contact
 
 - Author: Your Name
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourusername)
-- Email: your.email@example.com
+- GitHub: [Your GitHub Profile](https://github.com/abulhasan-salam/)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/abul-hasan-51b798225/)
+- Email: abulhasan412216@gmail.com
 
----
-Feel free to customize and expand the sections as needed. Make sure to replace the placeholder links and information with your actual details.
+----
