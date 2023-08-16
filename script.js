@@ -68,6 +68,8 @@ function _addtable(arr)
         {
                 fin_grade=[];
 
+                cerdit_arr=[]
+
                 total_creadit=0
   
                 let tablebody = document.getElementById('tbody')
@@ -100,7 +102,7 @@ function _addtable(arr)
                     let grade = document.createElement('td')
                     let input_grade = document.createElement('select')
                     let grt = ["Select","O","A+","A","B+","B","U"]
-                    let grt_val =[0,10,9,8,7,6,0]
+                    let grt_val =[null,10,9,8,7,6,0]
                     for(let i=0;i<grt.length;i++)
                     {
                         let opt_val = document.createElement('option')
@@ -157,47 +159,82 @@ function calculate()
 {
     
 
-    console.log(cerdit_arr)
-    console.log(fin_grade)
+    // console.log(cerdit_arr)
+    // console.log(fin_grade)
 
-    if(fin_grade == 0)
-    {
-        alert("Select the proper grade")
-    }
-    else
-    {  
-        let fin_cal=0
-        let mul_val=0          // [1,2,3,4,5]
-                               //[2,3,4,5,6]
+    // if(fin_grade == 0)
+    // {
+    //     alert("Select the proper grade")
+    // }
+    // else
+    // {  
+    //     let fin_cal=0
+    //     let mul_val=0          // [1,2,3,4,5]
+    //                            //[2,3,4,5,6]
         
     
     
-        for(let i=0;i<cerdit_arr.length;i++)
-        {
+    //     for(let i=0;i<cerdit_arr.length;i++)
+    //     {
             
-               mul_val = cerdit_arr[i]*fin_grade[i]
-               fin_cal += mul_val
-        }
-        console.log(fin_cal)
-        console.log(total_creadit)
-        let gpa =fin_cal/total_creadit
-        let display = document.getElementById('result')
-        display.innerHTML=`Your final GPA is ${gpa.toFixed(3)}`
+    //            mul_val = cerdit_arr[i]*fin_grade[i]
+    //            fin_cal += mul_val
+    //     }
+    //     console.log(fin_cal)
+    //     console.log(total_creadit)
+    //     let gpa =fin_cal/total_creadit
+    //     let display = document.getElementById('result')
+    //     display.innerHTML=`Your final GPA is ${gpa.toFixed(3)}`
     
-        display.style.display='block'
+    //     display.style.display='block'
     
-        display.style.margin='10px'
-        display.style.backgroundColor='black'
-        display.style.borderRadius='5px'
-        display.style.color='#ffff'
-        display.style.padding="10px"
-        display.style.width="80%"
+    //     display.style.margin='10px'
+    //     display.style.backgroundColor='black'
+    //     display.style.borderRadius='5px'
+    //     display.style.color='#ffff'
+    //     display.style.padding="10px"
+    //     display.style.width="80%"
     
     
     
-        // my_score=0;
+    //     // my_score=0;
     
 
+    // }
+    console.log(cerdit_arr);
+    console.log(fin_grade);
+
+    if (fin_grade.includes(undefined)) {
+        alert("Select the proper grade for all subjects");
+    } else {
+        let fin_cal = 0;
+        let mul_val = 0;
+
+        for (let i = 0; i < cerdit_arr.length; i++) {
+            mul_val = cerdit_arr[i] * fin_grade[i];
+            fin_cal += mul_val;
+        }
+
+        console.log(fin_cal);
+        console.log(total_creadit);
+        
+        let gpa = fin_cal / total_creadit;
+        
+        if (isNaN(gpa)) {
+            alert("Ensure that you have selected grades for all subjects.");
+            return;
+        }
+        
+        let display = document.getElementById('result');
+        display.innerHTML = `Your final GPA is ${gpa.toFixed(3)}`;
+
+        display.style.display = 'block';
+        display.style.margin = '10px';
+        display.style.backgroundColor = 'black';
+        display.style.borderRadius = '5px';
+        display.style.color = '#ffff';
+        display.style.padding = '10px';
+        display.style.width = '80%';
     }
 
 }
