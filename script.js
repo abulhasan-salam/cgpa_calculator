@@ -24,7 +24,7 @@ dep.forEach(val => {
  });
 
 
- let reg =[2008,2013,2017,2021]
+ let reg =[2017,2021]
 reg.forEach(val =>{
     const opt = document.createElement('option')
     opt.textContent=val
