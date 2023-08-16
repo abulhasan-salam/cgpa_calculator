@@ -1,6 +1,6 @@
 # GPA Calculator for Anna University Engineering Departments
 
-![Project Image](https://your-image-link-here.com)
+![Project Image](https://github.com/abulhasan-salam/cgpa_calculator/blob/main/images/gpa%201.png)
 
 ## Description
 
