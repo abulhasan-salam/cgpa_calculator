@@ -1,13 +1,15 @@
 
 body
 {
+
     display: flex;
     justify-content: center;
     background-color: rgba(14, 65, 65, 0.975);
 }
 .wrapper
 {
-   
+    position: relative;
+    top: 16px;
     border-radius: 10px;
     width: 95%;
     text-align: center;
@@ -15,10 +17,12 @@ body
 }
 .branch
 {
-    width: 89%;
+
+    width: 95%;
     display:flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.455);
+    /* margin-left: 30px; */
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
@@ -26,7 +30,7 @@ body
 }
 .branch #dep
 {
-    border:white solid 1px;
+    border:white solid 0px;
     font-size:small;
     margin-right: 30px;
 }
@@ -39,7 +43,7 @@ body
     margin-right: 30px;
 }
 table {
-    border-radius: 5px;
+    border-radius: 8px;
     border: black solid 1px;
     background-color: azure;
     border-collapse: collapse;
@@ -49,7 +53,7 @@ table {
 
 th, td {
     
-    border: solid rgba(0, 0, 0, 0.247) 0.5px;
+    border: solid rgba(0, 0, 0, 0.247) 0.4px;
     padding: 10px;
     text-align: justify;
 }
@@ -126,7 +130,7 @@ th {
     }
     .branch #dep
     {
-        border:white solid 2px;
+        border:white solid 1px;
         position: relative;
         top: 5px;
         left: 15px;
@@ -161,6 +165,10 @@ th {
     .subjects
     {
         display: block;
+    }
+    .branch
+    {
+        width:90%
     }
 
 }
